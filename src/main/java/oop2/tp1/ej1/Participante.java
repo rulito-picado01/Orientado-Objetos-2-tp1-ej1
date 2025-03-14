@@ -1,25 +1,22 @@
 package oop2.tp1.ej1;
 
-import java.util.Objects;
-
 public class Participante {
     private String dni;
     private String nombre;
+    private int puntos;
 
     public Participante(String dni, String nombre) {
         this.dni = dni;
         this.nombre = nombre;
+        this.puntos = 0;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
-        Participante that = (Participante) o;
-        return Objects.equals(dni, that.dni);
+    public void agregarPuntos(int puntos) {
+        this.puntos += puntos;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(dni);
+    public void inscribirse(Concurso concurso) {
+        Inscripcion incripcion = concurso.inscribirParticipante(this);
+        
     }
 }
