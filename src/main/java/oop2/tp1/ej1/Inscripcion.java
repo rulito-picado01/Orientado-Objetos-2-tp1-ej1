@@ -13,5 +13,8 @@ public class Inscripcion {
         this.fechaInscripcion = fechaIncripcion;
     }
 
+    public Participante participante() {
+        return participante;
+    }
 
 }

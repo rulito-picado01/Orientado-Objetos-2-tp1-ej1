@@ -15,8 +15,14 @@ public class Participante {
         this.puntos += puntos;
     }
 
-    public void inscribirse(Concurso concurso) {
-        Inscripcion incripcion = concurso.inscribirParticipante(this);
-        
+    public Inscripcion inscribirse(Concurso concurso) {
+        Inscripcion inscripcion = concurso.inscribirParticipante(this);
+
+        return inscripcion;
     }
+
+    public int puntosGanados() {
+        return puntos;
+    }
+
 }
