@@ -25,7 +25,7 @@ class RestauranteTest {
         pedido.confirmarPedido();
 
         Pago pago = new Pago(pedido, new TarjetaVisa(), 5);
-        assertEquals(4662.0, pago.calcularTotal(menu)); // 3% descuento en bebidas y 5% propina
+        assertEquals(4662.0, pago.calcularTotal(menu));
     }
 
     @Test
@@ -35,7 +35,7 @@ class RestauranteTest {
         pedido.confirmarPedido();
 
         Pago pago = new Pago(pedido, new TarjetaMastercard(), 5);
-        assertEquals(4672.5, pago.calcularTotal(menu)); // 2% descuento en platos y 5% propina
+        assertEquals(4672.5, pago.calcularTotal(menu));
     }
 
     @Test
@@ -45,7 +45,7 @@ class RestauranteTest {
         pedido.confirmarPedido();
 
         Pago pago = new Pago(pedido, new TarjetaComarcaPlus(), 5);
-        assertEquals(4630.5, pago.calcularTotal(menu)); // 2% en todo y 5% propina
+        assertEquals(4630.5, pago.calcularTotal(menu));
     }
 
     @Test
@@ -55,6 +55,6 @@ class RestauranteTest {
         pedido.confirmarPedido();
 
         Pago pago = new Pago(pedido, new TarjetaGenerica(), 5);
-        assertEquals(4725.0, pago.calcularTotal(menu)); // Solo propina sin descuento
+        assertEquals(4725.0, pago.calcularTotal(menu));
     }
 }
