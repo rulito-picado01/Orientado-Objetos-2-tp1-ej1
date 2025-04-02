@@ -1,4 +1,4 @@
-package oop2.tp1.ej1;
+package oop2.tp1.ej2;
 
 import java.util.Map;
 

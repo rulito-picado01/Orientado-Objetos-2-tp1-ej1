@@ -1,4 +1,4 @@
-package oop2.tp1.ej1;
+package oop2.tp1.ej2;
 
 public class Mesa {
     private int id;

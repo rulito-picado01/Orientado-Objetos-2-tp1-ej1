@@ -38,4 +38,8 @@ public class Concurso {
     public boolean estaInscripto(Participante participante) {
         return inscripciones.stream().anyMatch(inscripcion -> inscripcion.participante().equals(participante));
     }
+
+    public String getNombre() {
+        return nombre;
+    }
 }

@@ -25,4 +25,7 @@ public class Participante {
         return puntos;
     }
 
+    public String getDni() {
+        return dni;
+    }
 }

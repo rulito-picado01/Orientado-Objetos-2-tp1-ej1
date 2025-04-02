@@ -1,5 +1,6 @@
 package oop2.tp1.ej1;
 
+import oop2.tp1.ej2.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
